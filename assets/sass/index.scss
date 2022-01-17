@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: aqua;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+body h1 {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 30px;
+
+    span {
+        font-size: 60px;
+        text-transform: uppercase;
+    }
+}
+
+.hr {
+    border: 3px solid aqua;
+    width: 50%;
+    margin: 20px auto;
+}
+
+.tables {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .table_action {
+        position: relative;
+        margin: 30px 30px;
+
+        border: 2px solid aqua;
+        border-radius: 10px;
+
+        width: 25%;
+        height: 70px;
+
+        overflow: hidden;
+
+        span {
+            position: absolute;
+            left: 15px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+
+            height: 27px;
+
+            font-size: 25px;
+            text-transform: uppercase;
+
+            color: dodgerblue;
+            font-weight: bold;
+        }
+
+        a:nth-child(3) {
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        a:nth-child(2) {
+            position: absolute;
+            right: 71px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        a {
+            padding: 20px;
+
+            i {
+                color: dodgerblue;
+                font-size: 30px;
+            }
+            
+            &:hover {
+                background-color: dodgerblue;
+                color: black;
+                font-weight: bold;
+            }
+    
+            &:hover i {
+                background-color: dodgerblue;
+                color: black;
+                font-weight: bold;
+            }
+        }
+    }
+}

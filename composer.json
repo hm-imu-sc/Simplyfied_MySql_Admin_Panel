@@ -1,0 +1,19 @@
+{
+    "name": "hm_imu_sc/admin_panel",
+    "description": "general admin panel",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "hm-imu-sc",
+            "email": "hmimusc850@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}

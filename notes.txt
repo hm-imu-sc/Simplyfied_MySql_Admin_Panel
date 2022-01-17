@@ -1,0 +1,9 @@
+127.0.0.1/uiu_emas/		http://localhost/phpmyadmin/index.php?route=/database/sql&db=uiu_emas
+Your SQL query has been executed successfully.
+
+show CREATE table project_members;
+
+
+
+project_members	CREATE TABLE `project_members` (
+  `id` int(255) N...	

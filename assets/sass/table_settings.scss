@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: aqua;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+body h1 {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 30px;
+
+    span {
+        font-size: 60px;
+        text-transform: uppercase;
+    }
+}
+
+.hr {
+    border: 3px solid aqua;
+    width: 50%;
+    margin: 20px auto 40px;
+}
+
+.back {
+    position: absolute;
+    left: 40px;
+    top: 35px;
+
+    border: 2px solid aqua;
+    border-radius: 10px;
+
+    padding: 5px 60px;
+    text-align: center;
+
+    i, span {
+        font-size: 25px;
+        font-weight: bold;
+        vertical-align: middle;
+    }
+
+    i {
+        font-size: 45px;
+    }
+
+    &:hover {
+        background-color: aqua;
+        color: black;
+    }
+    &:hover i {
+        background-color: aqua;
+        color: black;
+    }
+    &:hover span {
+        background-color: aqua;
+        color: black;
+    }
+}
+
+form {
+
+    border: 3px solid aqua;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 40%;
+
+    input[type="submit"] {
+        cursor: pointer;
+        padding: 5px 20px;
+        border: 2px solid aqua;
+        border-radius: 5px;
+
+        &:hover {
+            background-color: aqua;
+            color: black;
+            font-weight: bold;
+        }
+    }
+
+    .input_group {
+        margin: 20px;
+        
+        .status {
+            cursor: pointer;
+            padding: 0 12px;
+            outline: 2px solid aqua;
+            border: 3px solid black;
+            border-radius: 7px;
+            height: 30px;
+            width: 30px;
+        }
+
+        .field_name {
+            margin-left: 20px;
+            text-transform: uppercase;
+
+            -moz-user-select: none;
+            -khtml-user-select: none;
+            -webkit-user-select: none;
+         
+            /*
+              Introduced in Internet Explorer 10.
+              See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+            */
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .active {
+            background-color: dodgerblue;
+        }
+    }
+}

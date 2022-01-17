@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: aqua;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+body h1 {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 30px;
+
+    span {
+        font-size: 60px;
+        text-transform: uppercase;
+    }
+}
+
+.hr {
+    border: 3px solid aqua;
+    width: 50%;
+    margin: 20px auto 40px;
+}
+
+.back {
+    position: absolute;
+    left: 40px;
+    top: 35px;
+
+    border: 2px solid aqua;
+    border-radius: 10px;
+
+    padding: 5px 60px;
+    text-align: center;
+
+    i, span {
+        font-size: 25px;
+        font-weight: bold;
+        vertical-align: middle;
+    }
+
+    i {
+        font-size: 45px;
+    }
+
+    &:hover {
+        background-color: aqua;
+        color: black;
+    }
+    &:hover i {
+        background-color: aqua;
+        color: black;
+    }
+    &:hover span {
+        background-color: aqua;
+        color: black;
+    }
+}
+
+form {
+    width: 60%;
+
+    margin: 0 auto;
+
+    .input_group {
+        display: flex;
+        flex-direction: column;
+        // border: 1px solid red;
+        
+        margin: 20px 0;
+        label {
+            margin-bottom: 10px;
+            font-size: 25px;
+            text-transform: uppercase;
+        }
+
+        img {
+            max-height: 200px;
+            max-width: 200px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        input, textarea, select {
+            font-size: 20px;
+            padding: 15px;
+            border: 1px solid aqua;
+            border-radius: 5px;
+            &:focus {
+                outline: none;
+            }
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        select, option {
+            cursor: pointer;
+        }
+    }
+
+    input[type="submit"] {
+        cursor: pointer;
+        padding: 5px 50px;
+        text-align: center;
+        font-weight: bold;
+        border: 2px solid aqua;
+        border-radius: 10px;
+
+        &:hover {
+            background-color: aqua;
+            color: black;
+        }
+    }
+}

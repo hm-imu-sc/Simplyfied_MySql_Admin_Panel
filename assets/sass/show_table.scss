@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: aqua;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px 10px black;
+    border-radius: 5px;
+
+    // display: none;
+    // &:hover {
+    //     display: block;
+    // }
+}
+
+::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 10px 10px aqua;
+    border: solid 2px transparent;
+    border-radius: 5px;
+
+    // display: none;
+    // &:hover {
+    //     display: block;
+    // }
+}
+
+body h1 {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 30px;
+
+    span {
+        font-size: 60px;
+        text-transform: uppercase;
+    }
+}
+
+.hr {
+    border: 3px solid aqua;
+    width: 50%;
+    margin: 20px auto 40px;
+}
+
+.back {
+    position: absolute;
+    left: 40px;
+    top: 35px;
+
+    border: 2px solid aqua;
+    border-radius: 10px;
+
+    padding: 5px 60px;
+    text-align: center;
+
+    i, span {
+        font-size: 25px;
+        font-weight: bold;
+        vertical-align: middle;
+    }
+
+    i {
+        font-size: 45px;
+    }
+
+    &:hover {
+        background-color: aqua;
+        color: black;
+    }
+    &:hover i {
+        background-color: aqua;
+        color: black;
+    }
+    &:hover span {
+        background-color: aqua;
+        color: black;
+    }
+}
+
+.insert {
+    position: absolute;
+    right: 40px;
+    top: 35px;
+
+    border: 2px solid aqua;
+    border-radius: 10px;
+
+    padding: 5px 60px;
+    text-align: center;
+
+    i, span {
+        font-size: 25px;
+        font-weight: bold;
+        vertical-align: middle;
+    }
+
+    i {
+        font-size: 45px;
+    }
+
+    &:hover {
+        background-color: aqua;
+        color: black;
+    }
+    &:hover i {
+        background-color: aqua;
+        color: black;
+    }
+    &:hover span {
+        background-color: aqua;
+        color: black;
+    }
+}
+
+.table {
+    // border: 5px solid red;
+    border: 3px solid rgba(0, 255, 255, 0.438);
+    border-radius: 10px;
+    max-width: 95%;
+    // height: 600px;
+    max-height: 700px;
+    margin: 0 auto;
+    overflow: auto;
+
+    table {
+        // display: none;
+        margin: auto;
+        // border: 2px solid rgba(0, 255, 255, 0.438);
+        // border-radius: 10px;
+        // height: 600px;
+        // width: 80%;
+        overflow: hidden;
+    
+        thead {
+            th {
+                border: 1px solid rgba(0, 255, 255, 0.438);
+            }
+        }
+        
+        tbody {
+    
+            .action {
+                text-align: center;
+            }
+    
+            td {
+                // border: 1px solid red;
+                border: 1px solid rgba(0, 255, 255, 0.438);
+                
+                .edit, .delete {
+                    text-align: center;
+                }
+    
+                .edit i {
+                    color: dodgerblue;
+                }
+    
+                .delete i {
+                    color: red;
+                }
+            }
+        }
+    }
+}
+
